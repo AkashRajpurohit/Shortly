@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 		res.render('index', { error: true, success: false, message: req.query.message })
 	} else if (req.query.success) {
 		// Change localhost to hosted url
-		res.render("index", { error: false, success: true, url: `http://localhost:3000/${req.query.code}` })
+		res.render("index", { error: false, success: true, url: `https://shortly-ar.herokuapp.com/${req.query.code}` })
 	} else {
 		res.render('index', { error: false, success: false })
 	}
