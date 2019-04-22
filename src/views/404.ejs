@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shortly. Providing shortlinks since 2019">
+  <meta name="author" content="Akash Rajpurohit">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="icon/favicon.ico">
+  <title>Not Found | Shortly</title>
+</head>
+<body>
+  <%- include('partials/header.ejs') -%>
+  <main class="container mt-4">
+  	<div class="error__div">
+	  	<h2 class="error__content"><span style="color: red"><%= code %></span> was not found. <a href="/">Create</a></h2>
+	  </div>
+  </main>
+</body>
+</html>

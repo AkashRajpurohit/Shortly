@@ -13,13 +13,7 @@
   <title>Shortly</title>
 </head>
 <body>
-  <section class="main">
-  	<div class="container main__content">
-  		<h1>Shortly</h1>
-  		<h3>Providing shortlinks since 2019</h3>
-  		<h6>Made with 💖 <a rel="noopener noreferrer" target="_blank" href="https://akashrajpurohit.cf" style="color: white">Akash Rajpurohit</a></h6>
-  	</div>
-  </section>
+  <%- include('partials/header.ejs') -%>
   <main class="container mt-4">
   	<% if (error) { %>
 		  <pre><code class="message__content"><%= message %></code></pre>
@@ -48,6 +42,8 @@
 		<% } else { %>
 			<div class="shorturl__div">
 				<a class="shorturl__content" rel="noopener noreferrer" target="_blank" href="<%= url %>"><%= url %></a>
+				<br />
+				<a class="shorturl__content" href="/">Go Back</a>
 			</div>
 		<% } %>
   </main>

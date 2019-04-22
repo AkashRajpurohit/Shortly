@@ -9,7 +9,7 @@ router.get('/:code', async (req, res) => {
 		const shortUrl = await ShortUrl.findOne({ code })
 
 		if(!shortUrl) {
-			return res.redirect('/?error=true&message=Not a valid short url. Create one if you like :)')
+			return res.render("404", { code })
 		} else {
 			res.redirect(shortUrl.url)
 		}
