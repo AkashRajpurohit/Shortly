@@ -6,7 +6,6 @@ const ShortUrl = require('../../models/ShortUrl')
 
 router.post('/magic', async (req, res) => {
 	const { url, code } = req.body
-	console.log(req.body)
 	try {
 		const codeExists = await ShortUrl.findOne({ code })
 
