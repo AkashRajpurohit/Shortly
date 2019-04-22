@@ -1,0 +1,46 @@
+.main {
+	width: 100vw;
+	height: 50vh;
+	background: #0097A7;
+	color: white;
+}
+
+.main__content {
+	padding: 10rem 0;
+}
+
+.message__content {
+	background: #D32F2F;
+	color: white;
+}
+
+.form__container {
+	text-align: center;
+}
+
+.shorturl__div {
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.shorturl__content {
+	text-decoration: none;
+	font-size: 4rem;
+	color: #0097A7;
+}
+
+.shorturl__content:hover {
+	color: #006064;
+}
+
+
+.mt-4 {
+	margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+	.main__content {
+		padding: 10rem 2rem;
+	}
+}

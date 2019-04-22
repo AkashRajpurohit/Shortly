@@ -1,0 +1,24 @@
+{
+  "name": "shortly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Akash Rajpurohit <akash009.dev@gmail.com> (https://akashrajpurohit.cf/)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "7.0.0",
+    "ejs": "2.6.1",
+    "express": "4.16.4",
+    "mongoose": "5.5.2",
+    "morgan": "1.9.1",
+    "validator": "10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.11"
+  }
+}
