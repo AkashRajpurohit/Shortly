@@ -9,11 +9,6 @@
 	padding: 10rem 0;
 }
 
-.message__content {
-	background: #D32F2F;
-	color: white;
-}
-
 .form__container {
 	text-align: center;
 }
@@ -38,6 +33,13 @@
 .error__content {
 	color: #303030;
 	font-size: 4rem;
+}
+
+.error__msg__div {
+	text-align: center;
+	background: #D32F2F;
+	color: #fff;
+	padding: 0 20px;
 }
 
 

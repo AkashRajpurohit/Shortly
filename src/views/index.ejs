@@ -17,7 +17,9 @@
   <%- include('partials/header.ejs') -%>
   <main class="container mt-4">
   	<% if (error) { %>
-		  <pre><code class="message__content"><%= message %></code></pre>
+  	<div class="error__msg__div">
+  		<h5><%= message %></h5>
+  	</div>
 		<% } %>
 
 		<% if(!success) { %>
